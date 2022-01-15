@@ -14,7 +14,7 @@ from_phone = os.environ['FROM_PHONE']
 client = Client(account_sid, auth_token)
 
 call = client.calls.create(
-                        twiml='<Response><Say voice="alice" language="es-ES" loop="2">Hola, te llamo porque tienes una alerta. Revisa el correo.</Say></Response>',
+                        twiml='<Response><Say voice="alice" language="es-ES" loop="2">¡Hola! Tienes una alerta. Revisa el correo.</Say></Response>',
                         to=to_phone,
                         from_=from_phone
                     )
